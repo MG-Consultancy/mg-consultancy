@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interim Technical Leadership | High-Performance Composites</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .contact-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: #f97316;
+            box-shadow: 0 20px 40px -10px rgba(249, 115, 22, 0.1);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(249, 115, 22, 0.08) 0%, rgba(10, 10, 10, 1) 100%);
+        }
+
+        .orange-glow {
+            text-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
+        }
+        
+        .nav-blur {
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        @keyframes pulse-subtle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .live-indicator {
+            animation: pulse-subtle 2s infinite;
+        }
+
+        .workflow-step:hover .step-icon {
+            background-color: #f97316;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* Stylized Logo Badge */
+        .badge-container {
+            position: relative;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .badge-container::after {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            pointer-events: none;
+        }
+
+        .badge-text {
+            font-size: 18px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="bg-[#0a0a0a] text-gray-100 min-h-screen antialiased text-left">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 nav-blur">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="badge-container group-hover:scale-105 transition-transform">
+                    <span class="badge-text">MG</span>
+                </div>
+                <div class="flex flex-col text-left">
+                    <span class="font-bold tracking-tight text-lg leading-none">Technical Leadership</span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-orange-500 font-bold mt-1">Interim Director Services</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-400">
+                <a href="#expertise" class="hover:text-orange-500 transition-colors">Expertise</a>
+                <a href="#capabilities" class="hover:text-orange-500 transition-colors">Methodology</a>
+                <a href="#engagement" class="hover:text-orange-500 transition-colors">Engagement</a>
+                <a href="https://www.linkedin.com/in/mg-composites" target="_blank" class="flex items-center gap-2 text-white bg-orange-600 px-5 py-2.5 rounded-full hover:bg-orange-500 transition-all shadow-lg shadow-orange-900/20">
+                    <i data-lucide="linkedin" class="w-4 h-4"></i> Profile
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-48 pb-32 px-6 hero-gradient relative overflow-hidden text-center">
+        <div class="max-w-5xl mx-auto relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-effect text-orange-500 text-xs font-bold uppercase tracking-widest mb-10 border border-orange-500/20 mx-auto">
+                <span class="w-2 h-2 bg-orange-500 rounded-full live-indicator"></span>
+                Accepting H1 2026 Engagement
+            </div>
+            <h1 class="text-6xl md:text-8xl font-black tracking-tighter text-white mb-10 leading-[0.9] orange-glow">
+                Optimizing High-Performance <span class="text-transparent bg-clip-text bg-gradient-to-b from-orange-400 to-orange-600">Composite Systems.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 leading-relaxed mb-12 max-w-3xl mx-auto font-light">
+                <span class="text-white font-medium">Verified 28-Year Tenure</span> across <span class="text-white font-medium">F1 and Supercar</span> sectors. Delivering operational scaling and "First Time Right" technical lead-time reduction.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-5 justify-center">
+                <a href="#engagement" class="px-10 py-5 bg-orange-600 text-white font-bold rounded-2xl hover:bg-orange-500 transition-all shadow-xl shadow-orange-900/40 text-lg">Discuss 2026 Intake</a>
+                <a href="#expertise" class="px-10 py-5 glass-effect text-white font-bold rounded-2xl hover:bg-white/10 transition-all text-lg border border-white/10">Core Capabilities</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats / Trust Section -->
+    <section id="expertise" class="py-24 px-6 border-y border-white/5 bg-black/40">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-8">
+                <div class="text-center group">
+                    <div class="text-5xl font-black text-white mb-3 group-hover:text-orange-500 transition-colors">28+</div>
+                    <div class="text-gray-500 text-[10px] uppercase tracking-[0.4em] font-bold">Verified Industry Years</div>
+                </div>
+                <div class="text-center group">
+                    <div class="text-5xl font-black text-white mb-3 group-hover:text-orange-500 transition-colors italic text-4xl md:text-5xl">HND</div>
+                    <div class="text-gray-500 text-[10px] uppercase tracking-[0.4em] font-bold">Systems Distinction</div>
+                </div>
+                <div class="text-center group">
+                    <div class="text-5xl font-black text-white mb-3 group-hover:text-orange-500 transition-colors italic">F1</div>
+                    <div class="text-gray-500 text-[10px] uppercase tracking-[0.4em] font-bold">Red Bull Racing Tenure</div>
+                </div>
+                <div class="text-center group">
+                    <div class="text-5xl font-black text-white mb-3 group-hover:text-orange-500 transition-colors italic text-4xl md:text-5xl">2026</div>
+                    <div class="text-gray-500 text-[10px] uppercase tracking-[0.4em] font-bold">Intake Strategy</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Methodology Section -->
+    <section id="capabilities" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+            <div class="text-left">
+                <h3 class="text-sm uppercase tracking-[0.4em] text-orange-500 font-bold mb-6">Operational Excellence</h3>
+                <h4 class="text-4xl md:text-5xl font-bold mb-10 text-white leading-tight">Implementing <span class="italic font-serif text-orange-500">"First Time Right"</span> Methodology.</h4>
+                <p class="text-xl text-gray-400 leading-relaxed mb-10">
+                    In high-stakes manufacturing, delay is the ultimate cost. I provide interim leadership designed to stabilize production lines and implement rigorous systems distinction for elite automotive programs.
+                </p>
+                
+                <div class="space-y-8 text-left">
+                    <div class="flex items-start gap-6 group">
+                        <div class="mt-1 bg-orange-600/20 p-3 rounded-xl border border-orange-600/30 group-hover:bg-orange-600 transition-all shrink-0">
+                            <i data-lucide="zap" class="text-orange-500 group-hover:text-white w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-xl font-bold text-white block mb-2">Operational Scaling</span>
+                            <span class="text-gray-500 leading-relaxed italic">Systematizing facilities to meet the complex demands of 2026 technical regulation shifts and high-volume supercar launches.</span>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-6 group">
+                        <div class="mt-1 bg-orange-600/20 p-3 rounded-xl border border-orange-600/30 group-hover:bg-orange-600 transition-all shrink-0">
+                            <i data-lucide="award" class="text-orange-500 group-hover:text-white w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-xl font-bold text-white block mb-2">Systems Distinction (HND)</span>
+                            <span class="text-gray-500 leading-relaxed italic">Applying academic rigour to 28 years of practical craftsmanship to ensure operational integrity and "zero-defect" cultures.</span>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-6 group">
+                        <div class="mt-1 bg-orange-600/20 p-3 rounded-xl border border-orange-600/30 group-hover:bg-orange-600 transition-all shrink-0">
+                            <i data-lucide="clock" class="text-orange-500 group-hover:text-white w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-xl font-bold text-white block mb-2">Lead-Time Compression</span>
+                            <span class="text-gray-500 leading-relaxed italic">Extracting efficiency from autoclave and cleanroom workflows through precision process design and shop-floor mentorship.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Strategic Metrics Grid -->
+            <div class="glass-effect p-12 rounded-[2rem] border-white/10 relative text-left">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-orange-600/10 blur-[80px]"></div>
+                <h5 class="text-xs uppercase tracking-[0.4em] text-orange-500 font-bold mb-12">Performance Benchmarks</h5>
+                <div class="space-y-12">
+                    <div>
+                        <div class="flex justify-between text-xs font-bold uppercase mb-4 tracking-widest text-gray-400">
+                            <span>Aerospace Standards</span>
+                            <span class="text-orange-500">95%</span>
+                        </div>
+                        <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden">
+                            <div class="bg-gradient-to-r from-orange-600 to-orange-400 w-[95%] h-full rounded-full transition-all duration-1000"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs font-bold uppercase mb-4 tracking-widest text-gray-400">
+                            <span>F1 Intake Compliance</span>
+                            <span class="text-orange-500">98%</span>
+                        </div>
+                        <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden">
+                            <div class="bg-gradient-to-r from-orange-600 to-orange-400 w-[98%] h-full rounded-full transition-all duration-1000"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs font-bold uppercase mb-4 tracking-widest text-gray-400">
+                            <span>Systems Distinction</span>
+                            <span class="text-orange-500">92%</span>
+                        </div>
+                        <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden">
+                            <div class="bg-gradient-to-r from-orange-600 to-orange-400 w-[92%] h-full rounded-full transition-all duration-1000"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-16 pt-8 border-t border-white/5 grid grid-cols-2 gap-8">
+                    <div>
+                        <div class="text-gray-500 text-[10px] uppercase font-bold tracking-widest mb-2">Core Sector</div>
+                        <div class="text-white font-bold">Supercar / F1</div>
+                    </div>
+                    <div>
+                        <div class="text-gray-500 text-[10px] uppercase font-bold tracking-widest mb-2">Deployment</div>
+                        <div class="text-white font-bold">Interim Director</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultancy Workflow -->
+    <section class="py-24 px-6 bg-[#0d0d0d] text-left">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-sm uppercase tracking-[0.4em] text-orange-500 font-bold mb-6">Execution Strategy</h3>
+            <h4 class="text-4xl font-bold mb-16">The Interim Deployment Workflow</h4>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
+                <div class="workflow-step group">
+                    <div class="step-icon w-16 h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mb-6 text-orange-500 transition-all duration-300">
+                        <i data-lucide="search" class="w-8 h-8"></i>
+                    </div>
+                    <h5 class="text-xl font-bold mb-4">1. Diagnostic Audit</h5>
+                    <p class="text-gray-500 text-sm leading-relaxed font-light">Full technical and operational audit of current cleanroom, autoclave, and finishing workflows to identify systemic bottlenecks.</p>
+                </div>
+                <div class="workflow-step group">
+                    <div class="step-icon w-16 h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mb-6 text-orange-500 transition-all duration-300">
+                        <i data-lucide="layers" class="w-8 h-8"></i>
+                    </div>
+                    <h5 class="text-xl font-bold mb-4">2. System Implementation</h5>
+                    <p class="text-gray-500 text-sm leading-relaxed font-light">Deployment of "First Time Right" protocols and shop-floor mentorship to align output with 2026 technical standards.</p>
+                </div>
+                <div class="workflow-step group">
+                    <div class="step-icon w-16 h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mb-6 text-orange-500 transition-all duration-300">
+                        <i data-lucide="trending-up" class="w-8 h-8"></i>
+                    </div>
+                    <h5 class="text-xl font-bold mb-4">3. Stabilized Scale</h5>
+                    <p class="text-gray-500 text-sm leading-relaxed font-light">Handover of an optimized, self-sustaining production system capable of meeting contract-critical volume demands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Sectors -->
+    <section class="py-24 px-6 text-left">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="w-full md:w-1/3 text-left text-left">
+                    <h3 class="text-sm uppercase tracking-[0.4em] text-orange-500 font-bold mb-6">Market Scope</h3>
+                    <h4 class="text-4xl font-bold mb-6 leading-tight">Sector Focus.</h4>
+                    <p class="text-gray-400 font-light">Specializing in high-integrity composite environments where precision craftsmanship meets systemic operational excellence.</p>
+                </div>
+                <div class="w-full md:w-2/3 grid grid-cols-2 gap-4">
+                    <div class="glass-effect p-8 rounded-2xl border-white/5 hover:border-orange-500/30 transition-all">
+                        <div class="text-white font-bold mb-2">Automotive</div>
+                        <div class="text-gray-500 text-xs">Hypercar Chassis & Aero Components</div>
+                    </div>
+                    <div class="glass-effect p-8 rounded-2xl border-white/5 hover:border-orange-500/30 transition-all">
+                        <div class="text-white font-bold mb-2">Motorsport</div>
+                        <div class="text-gray-500 text-xs">F1, Le Mans, and GT3 Structural Parts</div>
+                    </div>
+                    <div class="glass-effect p-8 rounded-2xl border-white/5 hover:border-orange-500/30 transition-all">
+                        <div class="text-white font-bold mb-2">Aerospace</div>
+                        <div class="text-gray-500 text-xs">High-Integrity Carbon Structures</div>
+                    </div>
+                    <div class="glass-effect p-8 rounded-2xl border-white/5 hover:border-orange-500/30 transition-all">
+                        <div class="text-white font-bold mb-2">Special Projects</div>
+                        <div class="text-gray-500 text-xs">Advanced Engineering & Rapid Prototyping</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engagement Section -->
+    <section id="engagement" class="py-32 px-6 bg-black relative text-center">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-sm uppercase tracking-[0.4em] text-orange-500 font-bold mb-6 mx-auto">Engagement</h2>
+                <h3 class="text-5xl md:text-6xl font-black text-white mb-8 tracking-tighter mx-auto">Let's discuss your 2026 intake.</h3>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
+                    Direct access for interim management inquiries, technical leadership consultations, and operational audits. Currently reviewing engagements for H1 2025/2026.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Email -->
+                <a href="mailto:mgcompositesandconsultancy@gmail.com" class="contact-card glass-effect p-12 rounded-[2rem] flex flex-col items-center text-center group border-white/5">
+                    <div class="bg-white/5 p-6 rounded-2xl mb-8 text-white group-hover:bg-orange-600 group-hover:scale-110 transition-all duration-500 flex items-center justify-center">
+                        <i data-lucide="mail" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-white">Email Inquiry</h4>
+                    <p class="text-gray-500 mb-8 text-sm leading-relaxed font-light">Request a formal Capability Statement or project brief.</p>
+                    <span class="text-orange-500 font-bold flex items-center gap-2 group-hover:gap-4 transition-all uppercase text-xs tracking-widest">Send Message <i data-lucide="chevron-right" class="w-5 h-5"></i></span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/mg-composites" target="_blank" class="contact-card glass-effect p-12 rounded-[2rem] flex flex-col items-center text-center group border-white/5">
+                    <div class="bg-white/5 p-6 rounded-2xl mb-8 text-white group-hover:bg-orange-600 group-hover:scale-110 transition-all duration-500 flex items-center justify-center">
+                        <i data-lucide="linkedin" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-white">Industry Profile</h4>
+                    <p class="text-gray-500 mb-8 text-sm leading-relaxed font-light">Connect for background verification and technical networking.</p>
+                    <span class="text-orange-500 font-bold flex items-center gap-2 group-hover:gap-4 transition-all uppercase text-xs tracking-widest">View Network <i data-lucide="chevron-right" class="w-5 h-5"></i></span>
+                </a>
+
+                <!-- Phone -->
+                <a href="tel:07578343443" class="contact-card glass-effect p-12 rounded-[2rem] flex flex-col items-center text-center group border-white/5 text-center">
+                    <div class="bg-white/5 p-6 rounded-2xl mb-8 text-white group-hover:bg-orange-600 group-hover:scale-110 transition-all duration-500 flex items-center justify-center text-center">
+                        <i data-lucide="phone" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-white">Direct Line</h4>
+                    <p class="text-gray-500 mb-8 text-sm leading-relaxed font-light">Schedule an initial technical lead-time consultation call.</p>
+                    <span class="text-orange-500 font-bold flex items-center gap-2 group-hover:gap-4 transition-all uppercase text-xs tracking-widest">Call Direct <i data-lucide="chevron-right" class="w-5 h-5 text-center"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 px-6 bg-black text-center border-t border-white/5">
+        <div class="flex items-center justify-center gap-2 mb-6 text-center">
+            <div class="badge-container w-8 h-8 rounded-lg flex items-center justify-center shadow-none border border-white/10">
+                 <span class="text-[12px] font-black">MG</span>
+            </div>
+            <span class="text-gray-400 font-bold tracking-widest text-xs uppercase">Interim Technical Leadership</span>
+        </div>
+        <p class="text-gray-600 text-[10px] font-bold uppercase tracking-[0.4em]">&copy; 2025 MG Composites & Consultancy. United Kingdom.</p>
+    </footer>
+
+    <!-- Mobile Sticky Action Bar -->
+    <div class="fixed bottom-0 left-0 right-0 p-4 md:hidden bg-black/90 backdrop-blur-xl border-t border-white/10 z-50">
+        <div class="grid grid-cols-3 gap-3">
+            <a href="mailto:mgcompositesandconsultancy@gmail.com" class="flex flex-col items-center justify-center py-4 glass-effect rounded-2xl border border-white/10">
+                <i data-lucide="mail" class="w-5 h-5 mb-1 text-orange-500"></i>
+                <span class="text-[9px] uppercase tracking-wider font-black text-gray-400">Email</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mg-composites" target="_blank" class="flex flex-col items-center justify-center py-4 glass-effect rounded-2xl border border-white/10">
+                <i data-lucide="linkedin" class="w-5 h-5 mb-1 text-orange-500"></i>
+                <span class="text-[9px] uppercase tracking-wider font-black text-gray-400">Link</span>
+            </a>
+            <a href="tel:07578343443" class="flex flex-col items-center justify-center py-4 bg-orange-600 rounded-2xl shadow-lg shadow-orange-900/40 border border-orange-500">
+                <i data-lucide="phone" class="w-5 h-5 mb-1 text-white"></i>
+                <span class="text-[9px] uppercase tracking-wider font-black text-white">Call</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
